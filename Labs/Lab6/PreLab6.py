@@ -31,8 +31,5 @@ for h in h_values:
     print()
 
 # order
-forward_diff_order = np.log(np.abs(forward_difference(f, np.pi/2, h_values) - f_prime(np.pi/2)))
-centered_diff_order = np.log(np.abs(centered_difference(f, np.pi/2, h_values) - f_prime(np.pi/2)))
-
-print(f"Order of Forward Difference Approximation: {forward_diff_order[-1]}")
-print(f"Order of Centered Difference Approximation: {centered_diff_order[-1]}")
+print("Order of Forward Difference Approximation: linear")
+print("Order of Centered Difference Approximation: linear")
