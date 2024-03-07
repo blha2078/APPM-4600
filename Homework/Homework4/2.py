@@ -140,24 +140,24 @@ def plot_iterates(iterates, method_name):
 
 # use routines
 # Question i
-# x0 = np.array([1, 1])
+x0 = np.array([1, 1])
 # Question ii
-x0 = np.array([1, -1])
+# x0 = np.array([1, -1])
 # Question iii
 # x0 = np.array([0, 0])
 
-Nmax = 100
+Nmax = 100000
 tol = 1e-10
 
-print('Starting point: ', x0)
-t = time.time()
-for j in range(20):
-  [xstar,ier,its] =  Newton(x0,tol,Nmax)
-elapsed = time.time()-t
-print(xstar)
-print('Newton: the error message reads:',ier)
-print('Newton: took this many seconds:',elapsed/20)
-print('Netwon: number of iterations is:',its)
+# print('Starting point: ', x0)
+# t = time.time()
+# for j in range(20):
+#   [xstar,ier,its] =  Newton(x0,tol,Nmax)
+# elapsed = time.time()-t
+# print(xstar)
+# print('Newton: the error message reads:',ier)
+# print('Newton: took this many seconds:',elapsed/20)
+# print('Netwon: number of iterations is:',its)
  
 t = time.time()
 for j in range(20):
@@ -168,12 +168,12 @@ print('Lazy Newton: the error message reads:',ier)
 print('Lazy Newton: took this many seconds:',elapsed/20)
 print('Lazy Newton: number of iterations is:',its)
  
-t = time.time()
-for j in range(20):
-  [xstar,ier,its] = Broyden(x0, tol,Nmax)     
-elapsed = time.time()-t
-print(xstar)
-print('Broyden: the error message reads:',ier)
-print('Broyden: took this many seconds:',elapsed/20)
-print('Broyden: number of iterations is:',its)
+# t = time.time()
+# for j in range(20):
+#   [xstar,ier,its] = Broyden(x0, tol,Nmax)     
+# elapsed = time.time()-t
+# print(xstar)
+# print('Broyden: the error message reads:',ier)
+# print('Broyden: took this many seconds:',elapsed/20)
+# print('Broyden: number of iterations is:',its)
      
