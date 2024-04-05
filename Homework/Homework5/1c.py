@@ -24,10 +24,11 @@ def barycentric_lagrange(x, y, z):
         p[i] = numerator / denominator
     return p
 
-n_values = range(2, 21)  # Values of n from 2 to 20
+# n_values = range(2, 21)  # Values of n from 2 to 20
+n_values = range(15, 20)
 for n in n_values:
-    h = 2 / n
-    xi = np.array([-1 + (i - 1) * h for i in range(1, n + 2)])
+    # Generate Chebyshev nodes
+    xi = np.cos((2 * np.arange(n + 1) + 1) * np.pi / (2 * (n + 1)))
     fi = f(xi)
 
     # Plot data points
@@ -45,7 +46,7 @@ for n in n_values:
 
     plt.xlabel('x')
     plt.ylabel('y')
-    plt.title('Barycentric Lagrange Interpolation')
+    plt.title('Barycentric Lagrange Interpolation with Chebyshev Nodes')
     plt.legend()
     plt.grid(True)
     plt.show()
