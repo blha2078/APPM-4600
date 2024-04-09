@@ -13,16 +13,16 @@ def composite_simpson(a, b, f, N):
 
     return result
 
-# Example usage:
-# Define the function to be integrated
-def f(x):
-    return x**2
+# # Example usage:
+# # Define the function to be integrated
+# def f(x):
+#     return x**2
 
-a = 0
-b = 1
+# a = 0
+# b = 1
 
-N = 100
+# N = 100
 
-# Calculate the integral using composite Simpson's rule
-integral_approx = composite_simpson(a, b, f, N)
-print("Approximation of integral:", integral_approx)
+# # Calculate the integral using composite Simpson's rule
+# integral_approx = composite_simpson(a, b, f, N)
+# print("Approximation of integral:", integral_approx)
